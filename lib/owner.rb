@@ -21,6 +21,7 @@ class Owner
       dogs: [],
       cats: []
     }
+    @@all << self
   end
 
   def say_species
