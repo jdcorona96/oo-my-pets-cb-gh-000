@@ -25,10 +25,11 @@ class Owner
   end
 
   def say_species
-    @species
+    "I am a #{@species}."
   end
 
   attr_accessor :name, :pets
+  attr_reader :species
 
   def buy_fish(name)
     fish = Fish.new(name)
